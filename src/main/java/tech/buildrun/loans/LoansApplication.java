@@ -1,13 +1,13 @@
-package tech.buildrun.loan;
+package tech.buildrun.loans;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LoanApplication {
+public class LoansApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LoanApplication.class, args);
+		SpringApplication.run(LoansApplication.class, args);
 	}
 
 }

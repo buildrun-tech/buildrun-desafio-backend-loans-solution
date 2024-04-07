@@ -1,4 +1,4 @@
-package tech.buildrun.loan.domain;
+package tech.buildrun.loans.domain;
 
 public class Customer {
 
@@ -16,19 +16,19 @@ public class Customer {
         this.location = location;
     }
 
-    public boolean isIncomeEqualOrGreaterThan(Double value) {
-        return income >= value;
-    }
-
-    public boolean isIncomeEqualOrLowerThan(Double value) {
+    public boolean isIncomeEqualOrLowerThan(double value) {
         return income <= value;
     }
 
-    public boolean isIncomeBetween(Double minValue, Double maxValue) {
+    public boolean isIncomeEqualOrGreaterThan(double value) {
+        return income >= value;
+    }
+
+    public boolean isIncomeBetween(double minValue, double maxValue) {
         return income >= minValue && income <= maxValue;
     }
 
-    public boolean isAgeLessThan(int value) {
+    public boolean isAgeLowerThan(int value) {
         return age < value;
     }
 

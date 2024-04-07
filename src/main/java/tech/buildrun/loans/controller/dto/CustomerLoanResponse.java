@@ -1,4 +1,4 @@
-package tech.buildrun.loan.controller.dto;
+package tech.buildrun.loans.controller.dto;
 
 import java.util.List;
 

@@ -1,10 +1,10 @@
-package tech.buildrun.loan.controller.dto;
+package tech.buildrun.loans.controller.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.br.CPF;
-import tech.buildrun.loan.domain.Customer;
+import tech.buildrun.loans.domain.Customer;
 
 public record CustomerLoanRequest(@Min(value = 18) @NotNull Integer age,
                                   @CPF String cpf,
@@ -14,11 +14,11 @@ public record CustomerLoanRequest(@Min(value = 18) @NotNull Integer age,
 
     public Customer toCustomer() {
         return new Customer(
-                age,
-                cpf,
-                name,
-                income,
-                location
+            age,
+            cpf,
+            name,
+            income,
+            location
         );
     }
 }
