@@ -1,7 +1,5 @@
 package tech.buildrun.loan.domain;
 
-import java.util.Optional;
-
 public class Loan {
 
     private Customer customer;

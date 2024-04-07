@@ -1,7 +1,5 @@
 package tech.buildrun.loan.domain;
 
-import tech.buildrun.loan.controller.dto.CustomerLoanRequest;
-
 public class Customer {
 
     private Integer age;
@@ -23,7 +21,7 @@ public class Customer {
     }
 
     public boolean isIncomeEqualOrLowerThan(Double value) {
-        return income >= value;
+        return income <= value;
     }
 
     public boolean isIncomeBetween(Double minValue, Double maxValue) {
