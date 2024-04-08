@@ -32,7 +32,7 @@ class CustomerTest {
         void shouldBeFalseWhenIncomeIsGreaterThanValue() {
             var customer = CustomerFactory.build(5000.0);
 
-            assertTrue(customer.isIncomeEqualOrLowerThan(8000.0));
+            assertFalse(customer.isIncomeEqualOrLowerThan(3000.0));
         }
     }
 
